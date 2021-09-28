@@ -40,8 +40,26 @@
     -else return tree
 
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at 5 and decrements one every time I click on a square that is not the treasure nor the bomb.
-- As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
-- As a user, I can see a message informing me that I lost the game if I select the square that contains the bomb.
+    -Branch: main
+    -created and styled h2 to hold counter
+    -added additional set state for counter decrement to handleGameplay method
+
+
+- As a user, I can see a message informing me that I won the game if I select the square that contains the treasure and I can see a message informing me that I lost the game if I select the square that contains the bomb.
+    -Branch: main
+    -added alert functionality to bomb and treasure conditional statements that only triggers on 100 millisecond delay to allow board to rerender
+
+
 - As a user, I cannot continue to play the game after I win or lose.
+    -Branch: main
+    -changed alert window to a confirm window that refreshes the page and restarts the game regardless of the user's reply
+    
+
+
 - As a user, I can see a message informing me that I lost the game when I run out of turns (the counter reaches zero).
+    -Branch: main
+    -added an if statement that catches when the counter is about to hit 0. It updates the square and the counter after the user has used their last click to show they ran out of turns
+    -added another delayed alert to let them know they lost by running out of turns and forces the window to refresh if they click on the alert box
+
 - As a user, I can click on a “Play Again” button that will restart the game.
+    -stretch - make it so if they press cancel, it just removes click functionality?
