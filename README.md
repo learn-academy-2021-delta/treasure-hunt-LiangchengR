@@ -16,6 +16,13 @@
 
 
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+    - Branch: alert-index
+    - created an onClick in the square div
+    - created a handler method for the square div
+    - passed index as props to square
+    - create a handleGameplay method to act as a functional prop
+    - passed the handleGameplay to square
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji.
 - As a user, if I select the losing square the question mark will become a bomb emoji.
