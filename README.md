@@ -24,7 +24,14 @@
     - passed the handleGameplay to square
 
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+    -Branch: tree-emoji
+    -destructured board out of state
+    -updated specific value to tree emjoji
+    -ctrl + cmd + space for emojis
+    -setState of board after updating the array
+
 - As a user, if I select the winning square the question mark will become a treasure emoji.
+    
 - As a user, if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at 5 and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.

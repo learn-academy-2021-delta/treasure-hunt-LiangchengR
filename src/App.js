@@ -11,7 +11,9 @@ class App extends Component{
   }
   
   handleGameplay = (index) => {
-    alert(index)
+    const { board } = this.state //destructuring to get to board
+    board[index] = "🌴" //will reassign the value at board[index]
+    this.setState({board: board})
   }
 
   render(){
